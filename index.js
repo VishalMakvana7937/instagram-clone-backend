@@ -18,7 +18,13 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:3000', 
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], 
+    credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 require('./models/model');
 require('./models/post');
