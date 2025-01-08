@@ -19,7 +19,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const corsOptions = {
-    origin: 'http://localhost:3000', 
+    origin: 'https://instagram-clone-demo-kappa.vercel.app', 
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], 
     credentials: true,
 };
